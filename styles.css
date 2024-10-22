@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background-image: url('Dark Blue Simple Dark Tech and Gaming Bio-Link Website Background.jpg');
+    background-size: cover;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 300;
+}
+
+header {
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 56px;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+section {
+    width: min-content;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(35px);
+    padding: 60px 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 80px;
+}
+
+section .icon {
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+section .icon i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+section .icon:hover  {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+section .icon span {
+    display: block;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+footer {
+    padding: 60px 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 26px;
+}
+
+footer a:hover i {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+footer i {
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+@media (max-width:720px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px;
+    }
+}
+
+@media (max-width:550px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 60px;
+    }
+}
+
+@media (max-width:480px) {
+    header h1 {
+        font-size: 46px;
+    }
+    header h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:420px) {
+    header h1 {
+        font-size: 32px;
+    }
+    header h2 {
+        font-size: 14px;
+    }
+}
